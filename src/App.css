@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Heebo',sans-serif;
+}
+body
+{
+  min-height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, rgb(241, 241, 241) 50%, rgb(158, 232, 255) 50%);
+}
+.main
+{
+  min-height: 100vh;
+  width: 100%;
+}
+.keebo
+{
+  font-size: 22px;
+  color: rgb(0, 153, 255);
+}
+
+.footer
+{
+  position: relative;
+  bottom: 0;
+  padding-top: 15px;
+  background-color: transparent;
+  color: inherit;
+  height: auto;
+}
+
+.AlertBox
+{
+  min-height: 90px;
+  background-color: transparent;
+}
+.italiana {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+}
+.fs-switch-lg {
+  transform: scale(1.35);
+  margin-top: 3px;
+}
+.fs-switch-lg {
+  width: 6rem;
+  height: 1rem;
+}
+
+.fs-switch-lg:checked {
+  background-size: 1.2rem;
+}
