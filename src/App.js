@@ -10,18 +10,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [mode, setMode] = useState("light");
 
-
   const [alert, setAlert] = useState(null);
 
   const showAlert = (message, type) => {
-
-
     setAlert({
       msg: message,
       type: type,
     });
-
-  
 
     setTimeout(() => {
       setAlert(null);
@@ -31,21 +26,18 @@ function App() {
   const togglemode = () => {
     if (mode === "dark") {
       setMode("light");
-      document.body.style.background =
-        "linear-gradient(45deg, rgb(241, 241, 241) 50%, rgb(158, 232, 255) 50%)";
+      document.body.style.background = "rgb(241, 241, 241)"; // light mode
       showAlert("Light mode has been enabled", "success");
-
     } else {
       setMode("dark");
-      document.body.style.background =
-        "linear-gradient(45deg, rgb(92, 92, 92) 50%, rgb(27, 27, 27) 50%)";
+      document.body.style.background = "rgb(27, 27, 27)"; // dark mode
       showAlert("Dark mode has been enabled", "success");
     }
   };
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/">
         <Navbar
           title="CodeHeave"
           about="About Us"
@@ -61,7 +53,6 @@ function App() {
             element={
               <TextForm
                 heading="Text Editor"
-            
                 mode={mode}
                 showAlert={showAlert}
               />

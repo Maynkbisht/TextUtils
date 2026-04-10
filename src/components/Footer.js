@@ -4,7 +4,7 @@ export default function Footer(props) {
   const style = {
     padding: "1rem 0",
     background: props.mode === "dark" ? "#0b0b0b" : "transparent",
-    color: props.mode === "dark" ? "#fff" : "#000",
+    color: props.mode === "dark" ? "#ffffff" : "#000",
   };
   return (
     <div className="footer" style={style}>
