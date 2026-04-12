@@ -1,26 +1,6 @@
 \# TextUtils — React Text Utility App
 
-Live demo: Not deployed from this repository yet.
-
-To generate a live demo URL using GitHub Pages:
-
-- Set the `homepage` field in `package.json` to `https://<GITHUB_USERNAME>.github.io/<REPO_NAME>`.
-- Install `gh-pages` and deploy from this repository with:
-
-```bash
-npm install --save-dev gh-pages
-npm run build
-npx gh-pages -d build
-```
-
-Alternatively add these scripts to `package.json` and run `npm run deploy`:
-
-```json
-"predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-```
-
-Replace `<GITHUB_USERNAME>` and `<REPO_NAME>` with your GitHub username and repository name. After deployment your site will be available at `https://<GITHUB_USERNAME>.github.io/<REPO_NAME>/`.
+Live demo: https://codeheavetextutils.onrender.com
 
 ## Overview
 
@@ -85,6 +65,3 @@ This outputs a production-ready `build/` folder you can deploy.
 
 Feel free to open issues or PRs to add new text utilities or improve UX. Keep changes focused and include tests where appropriate.
 
-## License
-
-This project has no license specified in the repo. Add a `LICENSE` file if you want to choose one.
